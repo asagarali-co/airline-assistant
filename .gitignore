@@ -1,0 +1,28 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and builds
+.venv/
+venv/
+node_modules/
+.next/
+out/
+build/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+
+# Runtime databases and logs
+*.db
+*.db-*
+*.sqlite*
+*.log
+
+# Local editor and agent files
+.idea/
+.qodo/
+.DS_Store
