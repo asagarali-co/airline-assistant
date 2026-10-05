@@ -31,5 +31,16 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#244c3e", colorScheme: "light" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  return <html lang="en"><body>{children}<Analytics /></body></html>;
+  return (
+    <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9847799502456875"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body>{children}<Analytics /></body>
+    </html>
+  );
 }
